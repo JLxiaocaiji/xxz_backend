@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.niii.iot.watermetermvp.mapper.InstructionMapper">
+
+    <update id="updatePartColumns">
+        update instruction
+        <set>
+            <if test='status != null and status != "" '>
+                status = #{status},
+            </if>
+            <if test='receive != null and receive != "" '>
+                receive = #{receive},
+            </if>
+            <if test='receivePic != null and receivePic != "" '>
+                receive_pic = #{receivePic},
+            </if>
+            update_time = now()
+        </set>
+        where id = #{id};
+    </update>
+    <select id="getWaterList" resultType="com.niii.iot.watermetermvp.domin.VO.InstructionVO">
+        select *
+        from instruction
+    </select>
+    <select id="getIntervalExcel" resultType="com.niii.iot.watermetermvp.domin.entity.Excel">
+        select i.device_number, d.device_name, i.create_time, i.receive_pic
+        from instruction i
+                 join device d on i.device_number = d.device_number
+        where i.device_number = #{deviceNumber}
+          and i.create_time between #{startTime} and #{endTime};
+    </select>
+    <select id="selectForCustomer" resultType="com.niii.iot.watermetermvp.domin.entity.Instruction">
+        SELECT i.*, DATE_FORMAT(i.create_time,'%Y%m') as nowMonth
+        FROM instruction i
+                 INNER JOIN (
+            SELECT
+                MAX(update_time) AS last_update_time
+            FROM instruction
+            GROUP BY EXTRACT(MONTH FROM update_time)  ,device_number
+        ) AS grouped_updates ON i.update_time = grouped_updates.last_update_time
+                 LEFT JOIN
+             device d
+             on i.device_number = d.device_number
+        where d.region_one = #{regionOne}
+                and d.region_two = #{regionTwo};
+    </select>
+</mapper>

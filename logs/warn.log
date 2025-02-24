@@ -1,0 +1,12 @@
+2025-02-24 11:36:30.943 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 15:48:10.548 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 16:04:55.211 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 16:37:02.772 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:08:04.413 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:09:08.927 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:10:00.603 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:11:29.806 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:13:02.154 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:14:04.458 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:16:06.208 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.
+2025-02-24 17:17:07.522 [main] WARN  org.mybatis.spring.mapper.ClassPathMapperScanner - No MyBatis mapper was found in '[com.qxxjl.wed.mapper]' package. Please check your configuration.

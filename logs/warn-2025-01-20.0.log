@@ -1,0 +1,16 @@
+2025-01-20 07:48:09.021 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:32:44.481 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:33:19.360 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:43:06.865 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:45:53.263 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:49:19.207 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:49:47.978 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:52:41.451 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m15s827ms291µs800ns).
+2025-01-20 08:52:49.328 [main] WARN  c.b.mybatisplus.core.metadata.TableInfoHelper - This primary key of "id" is primitive !不建议如此请使用包装类 in Class: "com.niii.iot.watermetermvp.domin.entity.User"
+2025-01-20 08:56:28.746 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=3m24s112ms529µs600ns).
+2025-01-20 08:59:00.317 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=50s109ms375µs100ns).
+2025-01-20 09:03:48.794 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=4m48s476ms311µs600ns).
+2025-01-20 09:11:15.610 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=56s695ms7µs700ns).
+2025-01-20 09:12:46.060 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m3s943ms192µs800ns).
+2025-01-20 09:14:44.172 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m58s112ms409µs500ns).
+2025-01-20 09:36:08.808 [HikariPool-1 housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Thread starvation or clock leap detected (housekeeper delta=1m35s638ms326µs300ns).

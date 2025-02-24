@@ -1,0 +1,215 @@
+2025-01-22 09:48:19.762 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-01-22 09:48:19.773 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Starting WaterMeterMvpApplication using Java 1.8.0_92 on DESKTOP-12LKTUN with PID 14412 (D:\niii_code\java_backend\water-meter-2.0\target\classes started by jinlong in D:\niii_code\java_backend\water-meter-2.0)
+2025-01-22 09:48:19.773 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - The following profiles are active: dev
+2025-01-22 09:48:20.958 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-01-22 09:48:20.962 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-22 09:48:21.008 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 18 ms. Found 0 Redis repository interfaces.
+2025-01-22 09:48:21.723 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 56666 (http)
+2025-01-22 09:48:21.732 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:48:21.733 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-22 09:48:21.733 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2025-01-22 09:48:21.841 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-22 09:48:21.841 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1991 ms
+2025-01-22 09:48:22.228 [main] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功建立SSH连接!
+2025-01-22 09:48:24.372 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:48:24.381 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 56666 (http) with context path ''
+2025-01-22 09:48:24.699 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Started WaterMeterMvpApplication in 5.491 seconds (JVM running for 7.574)
+2025-01-22 09:48:24.710 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - netty 启动成功 port:9678
+2025-01-22 09:48:24.711 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - 
+	----------------------------------------------------------
+	Application nbwater is running! Access URLs:
+	Local: 		http://localhost:56666
+	External: 	http://10.50.7.22:56666
+	Knife4j:  	http://10.50.7.22:56666/doc.html
+	----------------------------------------------------------
+2025-01-22 09:49:14.943 [http-nio-56666-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 09:49:14.944 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-22 09:49:14.945 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-22 09:49:15.003 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-22 09:49:15.298 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-22 09:50:48.541 [SpringApplicationShutdownHook] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功断开SSH连接!
+2025-01-22 09:50:48.562 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-22 09:50:48.580 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-22 09:50:53.579 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-01-22 09:50:53.586 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Starting WaterMeterMvpApplication using Java 1.8.0_92 on DESKTOP-12LKTUN with PID 27552 (D:\niii_code\java_backend\water-meter-2.0\target\classes started by jinlong in D:\niii_code\java_backend\water-meter-2.0)
+2025-01-22 09:50:53.587 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - The following profiles are active: dev
+2025-01-22 09:50:54.428 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-01-22 09:50:54.430 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-22 09:50:54.455 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-01-22 09:50:55.066 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 56666 (http)
+2025-01-22 09:50:55.073 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:50:55.074 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-22 09:50:55.074 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2025-01-22 09:50:55.253 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-22 09:50:55.253 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1609 ms
+2025-01-22 09:50:55.646 [main] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功建立SSH连接!
+2025-01-22 09:50:57.378 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:50:57.387 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 56666 (http) with context path ''
+2025-01-22 09:50:57.682 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Started WaterMeterMvpApplication in 4.58 seconds (JVM running for 5.519)
+2025-01-22 09:50:57.690 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - netty 启动成功 port:9678
+2025-01-22 09:50:57.691 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - 
+	----------------------------------------------------------
+	Application nbwater is running! Access URLs:
+	Local: 		http://localhost:56666
+	External: 	http://10.50.7.22:56666
+	Knife4j:  	http://10.50.7.22:56666/doc.html
+	----------------------------------------------------------
+2025-01-22 09:51:03.015 [http-nio-56666-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 09:51:03.016 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-22 09:51:03.017 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-22 09:51:03.088 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-22 09:51:03.378 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-22 09:56:24.460 [SpringApplicationShutdownHook] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功断开SSH连接!
+2025-01-22 09:56:33.178 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-01-22 09:56:33.184 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Starting WaterMeterMvpApplication using Java 1.8.0_92 on DESKTOP-12LKTUN with PID 10556 (D:\niii_code\java_backend\water-meter-2.0\target\classes started by jinlong in D:\niii_code\java_backend\water-meter-2.0)
+2025-01-22 09:56:33.184 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - The following profiles are active: dev
+2025-01-22 09:56:34.011 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-01-22 09:56:34.013 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-22 09:56:34.038 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-01-22 09:56:34.624 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 56666 (http)
+2025-01-22 09:56:34.632 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:56:34.633 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-22 09:56:34.633 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2025-01-22 09:56:34.784 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-22 09:56:34.785 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1544 ms
+2025-01-22 09:56:35.205 [main] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功建立SSH连接!
+2025-01-22 09:56:36.924 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:56:36.932 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 56666 (http) with context path ''
+2025-01-22 09:56:37.209 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Started WaterMeterMvpApplication in 4.481 seconds (JVM running for 5.392)
+2025-01-22 09:56:37.218 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - netty 启动成功 port:9678
+2025-01-22 09:56:37.219 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - 
+	----------------------------------------------------------
+	Application nbwater is running! Access URLs:
+	Local: 		http://localhost:56666
+	External: 	http://10.50.7.22:56666
+	Knife4j:  	http://10.50.7.22:56666/doc.html
+	----------------------------------------------------------
+2025-01-22 09:57:09.832 [SpringApplicationShutdownHook] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功断开SSH连接!
+2025-01-22 09:57:16.662 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-01-22 09:57:16.668 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Starting WaterMeterMvpApplication using Java 1.8.0_92 on DESKTOP-12LKTUN with PID 5184 (D:\niii_code\java_backend\water-meter-2.0\target\classes started by jinlong in D:\niii_code\java_backend\water-meter-2.0)
+2025-01-22 09:57:16.668 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - The following profiles are active: dev
+2025-01-22 09:57:17.500 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-01-22 09:57:17.515 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-22 09:57:17.541 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-01-22 09:57:18.100 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 56666 (http)
+2025-01-22 09:57:18.108 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:57:18.108 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-22 09:57:18.108 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2025-01-22 09:57:18.253 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-22 09:57:18.253 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1527 ms
+2025-01-22 09:57:18.632 [main] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功建立SSH连接!
+2025-01-22 09:57:20.257 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:57:20.265 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 56666 (http) with context path ''
+2025-01-22 09:57:20.538 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Started WaterMeterMvpApplication in 4.319 seconds (JVM running for 5.091)
+2025-01-22 09:57:20.545 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - netty 启动成功 port:9678
+2025-01-22 09:57:20.546 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - 
+	----------------------------------------------------------
+	Application nbwater is running! Access URLs:
+	Local: 		http://localhost:56666
+	External: 	http://10.50.7.22:56666
+	Knife4j:  	http://10.50.7.22:56666/doc.html
+	----------------------------------------------------------
+2025-01-22 09:57:26.763 [http-nio-56666-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 09:57:26.763 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-22 09:57:26.765 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-22 09:57:26.842 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-22 09:57:27.131 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-22 09:58:25.420 [SpringApplicationShutdownHook] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功断开SSH连接!
+2025-01-22 09:58:25.439 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-22 09:58:25.448 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-22 09:58:28.340 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-01-22 09:58:28.346 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Starting WaterMeterMvpApplication using Java 1.8.0_92 on DESKTOP-12LKTUN with PID 27808 (D:\niii_code\java_backend\water-meter-2.0\target\classes started by jinlong in D:\niii_code\java_backend\water-meter-2.0)
+2025-01-22 09:58:28.346 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - The following profiles are active: dev
+2025-01-22 09:58:29.172 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-01-22 09:58:29.174 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-22 09:58:29.198 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 11 ms. Found 0 Redis repository interfaces.
+2025-01-22 09:58:29.777 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 56666 (http)
+2025-01-22 09:58:29.786 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:58:29.787 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-22 09:58:29.787 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2025-01-22 09:58:29.901 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-22 09:58:29.901 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1496 ms
+2025-01-22 09:58:30.341 [main] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功建立SSH连接!
+2025-01-22 09:58:32.008 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-56666"]
+2025-01-22 09:58:32.016 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 56666 (http) with context path ''
+2025-01-22 09:58:32.294 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Started WaterMeterMvpApplication in 4.415 seconds (JVM running for 5.263)
+2025-01-22 09:58:32.302 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - netty 启动成功 port:9678
+2025-01-22 09:58:32.302 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - 
+	----------------------------------------------------------
+	Application nbwater is running! Access URLs:
+	Local: 		http://localhost:56666
+	External: 	http://10.50.7.22:56666
+	Knife4j:  	http://10.50.7.22:56666/doc.html
+	----------------------------------------------------------
+2025-01-22 09:58:35.887 [http-nio-56666-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 09:58:35.887 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-22 09:58:35.888 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-22 09:58:35.960 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-22 09:58:36.256 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-22 09:58:57.155 [SpringApplicationShutdownHook] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功断开SSH连接!
+2025-01-22 09:58:57.203 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-22 09:58:57.211 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-22 10:06:07.293 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-01-22 10:06:07.296 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Starting WaterMeterMvpApplication using Java 1.8.0_92 on DESKTOP-12LKTUN with PID 17072 (D:\niii_code\java_backend\water-meter-2.0\target\classes started by jinlong in D:\niii_code\java_backend\water-meter-2.0)
+2025-01-22 10:06:07.296 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - The following profiles are active: dev
+2025-01-22 10:06:08.001 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-01-22 10:06:08.003 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-22 10:06:08.024 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-01-22 10:06:08.499 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 56666 (http)
+2025-01-22 10:06:08.508 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-56666"]
+2025-01-22 10:06:08.508 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-22 10:06:08.508 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2025-01-22 10:06:08.602 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-22 10:06:08.602 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1259 ms
+2025-01-22 10:06:08.973 [main] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功建立SSH连接!
+2025-01-22 10:06:10.485 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-56666"]
+2025-01-22 10:06:10.493 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 56666 (http) with context path ''
+2025-01-22 10:06:10.743 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Started WaterMeterMvpApplication in 3.857 seconds (JVM running for 4.599)
+2025-01-22 10:06:10.750 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - netty 启动成功 port:9678
+2025-01-22 10:06:10.750 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - 
+	----------------------------------------------------------
+	Application nbwater is running! Access URLs:
+	Local: 		http://localhost:56666
+	External: 	http://10.50.7.22:56666
+	Knife4j:  	http://10.50.7.22:56666/doc.html
+	----------------------------------------------------------
+2025-01-22 10:08:57.300 [http-nio-56666-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 10:08:57.301 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-22 10:08:57.302 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-22 10:08:57.364 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-22 10:08:57.667 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-22 10:15:40.401 [SpringApplicationShutdownHook] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功断开SSH连接!
+2025-01-22 10:15:40.419 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-22 10:15:40.422 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-22 10:15:44.589 [background-preinit] INFO  org.hibernate.validator.internal.util.Version - HV000001: Hibernate Validator 6.2.0.Final
+2025-01-22 10:15:44.593 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Starting WaterMeterMvpApplication using Java 1.8.0_92 on DESKTOP-12LKTUN with PID 25668 (D:\niii_code\java_backend\water-meter-2.0\target\classes started by jinlong in D:\niii_code\java_backend\water-meter-2.0)
+2025-01-22 10:15:44.593 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - The following profiles are active: dev
+2025-01-22 10:15:45.317 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode!
+2025-01-22 10:15:45.319 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-22 10:15:45.341 [main] INFO  o.s.d.r.config.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 10 ms. Found 0 Redis repository interfaces.
+2025-01-22 10:15:45.836 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat initialized with port(s): 56666 (http)
+2025-01-22 10:15:45.843 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-56666"]
+2025-01-22 10:15:45.843 [main] INFO  org.apache.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-22 10:15:45.843 [main] INFO  org.apache.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/9.0.54]
+2025-01-22 10:15:45.940 [main] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-22 10:15:45.940 [main] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1298 ms
+2025-01-22 10:15:46.289 [main] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功建立SSH连接!
+2025-01-22 10:15:47.768 [main] INFO  org.apache.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-56666"]
+2025-01-22 10:15:47.775 [main] INFO  o.s.boot.web.embedded.tomcat.TomcatWebServer - Tomcat started on port(s): 56666 (http) with context path ''
+2025-01-22 10:15:48.035 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - Started WaterMeterMvpApplication in 3.834 seconds (JVM running for 4.452)
+2025-01-22 10:15:48.042 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - netty 启动成功 port:9678
+2025-01-22 10:15:48.043 [main] INFO  c.niii.iot.watermetermvp.WaterMeterMvpApplication - 
+	----------------------------------------------------------
+	Application nbwater is running! Access URLs:
+	Local: 		http://localhost:56666
+	External: 	http://10.50.7.22:56666
+	Knife4j:  	http://10.50.7.22:56666/doc.html
+	----------------------------------------------------------
+2025-01-22 10:16:13.241 [http-nio-56666-exec-1] INFO  o.a.c.core.ContainerBase.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-22 10:16:13.241 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-22 10:16:13.242 [http-nio-56666-exec-1] INFO  org.springframework.web.servlet.DispatcherServlet - Completed initialization in 1 ms
+2025-01-22 10:16:13.302 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-22 10:16:13.600 [http-nio-56666-exec-1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-22 10:49:14.175 [SpringApplicationShutdownHook] INFO  c.niii.iot.watermetermvp.config.SshContextListener - 成功断开SSH连接!
+2025-01-22 10:49:14.192 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-22 10:49:14.196 [SpringApplicationShutdownHook] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.

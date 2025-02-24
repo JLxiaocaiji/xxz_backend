@@ -1,0 +1,42 @@
+spring:
+  profiles:
+    active: dev
+  application:
+    name: nbwater
+logging:
+  config: classpath:logback-spring.xml
+  servlet:
+    multipart:
+      max-file-size: 10MB
+      max-request-size: 100MB
+  jpa:
+    show-sql: true
+
+server:
+  port: 1000
+  tomcat:
+    uri-encoding: UTF-8
+picture:
+  url: http://36.140.96.251:9555/
+  path: /home/root/iot/water_meter/picture/
+ai:
+  tokenUrl:
+  aiUrl: http://39.184.251.160:11026/evalBigImage
+#  大表地址
+  aiUrlBig: http://39.184.251.160:11028/evalBigImage
+#  大表每日允许的差值
+  aiBigDifference: 700
+
+# 防止XSS攻击
+xss:
+  # 过滤开关
+  enabled: true
+  # 排除链接（多个用逗号分隔）
+  excludes: /system/notice/*
+  # 匹配链接
+  urlPatterns: /system/*,/monitor/*,/tool/*
+
+# Swagger配置
+swagger:
+  # 是否开启swagger
+  enabled: true

@@ -1,0 +1,66 @@
+log:
+  path: /home/root/iot/water_meter/log.path_IS_UNDEFINED
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3307/water_meter_two?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+#    url: jdbc:mysql://localhost:3306/water_meter_two?useUnicode=true&characterEncoding=utf8&zeroDateTimeBehavior=CONVERT_TO_NULL&useSSL=false&serverTimezone=GMT%2B8
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: 123456
+  redis:
+    host: localhost
+    port: 6379
+    password: 123456
+mybatis-plus:
+  mapper-locations: classpath*:/mapper/**/*.xml
+  configuration:
+    ### 开启打印sql配置
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+water:
+  minio:
+    minio_url: http://39.184.251.160:48899
+    minio_name: minioadmin
+    minio_pass: minioadmin@123
+    bucketName: water
+#  configuration:
+#    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl
+
+#测试环境通过ssh通道连接数据库
+#jCraft:
+#    connection:
+#        user: root
+#        password: Admin123
+#        host: 10.50.7.158
+#        port: 22
+#        localPort: 3307
+#        remoteHost: 127.0.0.1
+#        remotePort: 3306
+
+#jCraft:
+#  connection:
+#    user: root
+#    password: Niii@#~894598swalp
+#    host: 36.140.96.251
+#    port: 22
+#    localPort: 3307
+#    remoteHost: 127.0.0.1
+#    remotePort: 3306
+
+jCraft:
+  connection:
+    user: root
+    password: Niii@#~894598swalp
+    host: 36.140.96.251
+    port: 22
+    localPort: 3307
+    remoteHost: 127.0.0.1
+    remotePort: 3306
+
+
+
+
+
+
+
+

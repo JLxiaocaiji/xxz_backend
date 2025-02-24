@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.qxxjl.wed.mapper.DeviceMapper">
+
+    <sql id="device">
+        select id,
+               `no`,
+               create_time,
+               update_time,
+               empty_rate,
+               gather_frequency,
+               upload_frequency,
+               device_number,
+               device_name,
+               region_one,
+               region_two,
+               sort_region_two,
+               sort_region_one
+        from device
+    </sql>
+
+    <select id="getTree" resultType="com.niii.iot.watermetermvp.domin.entity.Device">
+        <include refid="device"></include>
+        where `no` is not null
+        order by `no` asc
+    </select>
+
+    <select id="getTreeSearch" resultType="com.niii.iot.watermetermvp.domin.entity.Device">
+        <include refid="device"></include>
+        where `no` is not null
+        <if test='deviceName != null and deviceName != "" '>
+            and device_name like concat('%', #{deviceName}, '%')
+        </if>
+        <if test='no != null'>
+            and no like concat('%', #{no}, '%')
+        </if>
+        order by `no` asc
+    </select>
+
+    <select id="getData" resultType="com.niii.iot.watermetermvp.domin.VO.DownloadVO">
+        SELECT
+            i.id,
+            i.no,
+            i.device_id AS deviceId,
+            i.device_number AS deviceNumber,
+            i.flag,
+            i.type,
+            i.status,
+            i.instruct,
+            i.receive,
+            i.receive_pic AS receivePic,
+        --         i.create_time AS createTime,
+
+            CASE
+            WHEN i.receive_pic IS NULL THEN NULL
+            ELSE i.create_time
+            END AS createTime,
+
+            i.update_time AS updateTime,
+            i.data_out AS dataOut,
+            i.read_num AS readNum,
+            i.is_show AS isShow,
+            i.amendment_read_num AS amendmentReadNum,
+            i.is_amendment AS isAmendment,
+            i.is_shows AS isShows,
+            i.differ,
+            i.is_manual AS isManual,
+            d.region_one AS regionOne,
+            d.region_two AS regionTwo,
+            d.device_name AS deviceName,
+            d.seal,
+            d.household_num as householdNum
+        FROM instruction as i
+        LEFT JOIN device as d ON i.device_number = d.device_number
+        WHERE 1 = 1
+        <if test='deviceNumber != null and deviceNumber != "" '>
+            AND i.device_number = #{deviceNumber}
+        </if>
+        <if test="startTime != null and startTime != '' and endTime != null and endTime != ''">
+            AND i.create_time BETWEEN #{startTime} AND #{endTime}
+        </if>
+        <if test='regionOne != null and regionOne != "" '>
+            AND d.region_one = #{regionOne}
+        </if>
+        <if test='regionTwo != null and regionTwo != "" '>
+            AND d.region_two = #{regionTwo}
+        </if>
+    </select>
+
+    <select id="getLatestData" resultType="com.niii.iot.watermetermvp.domin.VO.DownloadVO">
+        WITH new_instructions AS (
+            SELECT
+            i.id,
+            i.`no`,
+            d.household_num AS householdNum,
+            d.region_one AS regionOne,
+            d.region_two AS regionTwo,
+            d.device_name AS deviceName,
+            i.read_num AS readNum,
+            i.differ,
+            d.seal,
+            i.receive_pic AS receivePic,
+            i.create_time AS createTime,
+            ROW_NUMBER() OVER (PARTITION BY i.device_number ORDER BY i.create_time DESC) AS rn
+            FROM
+                instruction i
+            LEFT JOIN
+                device d ON i.device_number = d.device_number
+            WHERE
+                1 = 1
+            <if test="startTime != null and startTime != '' and endTime != null and endTime != ''">
+                AND i.create_time BETWEEN #{startTime} AND #{endTime}
+            </if>
+            <if test="regionOne != null and regionOne != ''">
+                AND d.region_one = #{regionOne}
+            </if>
+            <if test="regionTwo != null and regionTwo != ''">
+                AND d.region_two = #{regionTwo}
+            </if>
+        )
+        SELECT
+            id,
+            `no`,
+            householdNum,
+            regionOne,
+            regionTwo,
+            deviceName,
+            readNum,
+            differ,
+            seal,
+            receivePic,
+            CASE
+                WHEN receivePic IS NULL THEN NULL
+            ELSE createTime
+            END AS createTime
+        FROM
+            new_instructions
+        WHERE
+            rn = 1
+        ORDER BY
+            no
+    </select>
+</mapper>

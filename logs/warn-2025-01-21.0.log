@@ -1,0 +1,2 @@
+2025-01-21 14:43:08.152 [http-nio-56666-exec-4] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'deviceNumber' for method parameter type String is not present]
+2025-01-21 14:46:22.446 [http-nio-56666-exec-1] WARN  o.s.w.s.m.support.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required request parameter 'deviceNumber' for method parameter type String is not present]
