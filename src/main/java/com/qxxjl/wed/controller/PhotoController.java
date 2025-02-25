@@ -9,6 +9,10 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import java.io.File;
+import java.util.ArrayList;
+import java.util.List;
+
+import static com.qxxjl.wed.utils.file.file.isImage;
 
 @RestController
 @RequestMapping
@@ -22,16 +26,24 @@ public class PhotoController {
     }
 
     @GetMapping("/getImage")
-    public String getImageUrl() {
-        String imageName = "OIP.jpg";
-        String imagePath = "D:/java_project/images" + imageName;
-        File imageFile = new File(imagePath);
-        if (imageFile.exists()) {
-            log.info("11");
-            // 这里假设你的项目部署在本地 1000 端口，通过静态资源映射访问图片
-            return "http://localhost:1000/java_project/images/" + imageName;
+    public List<String> getImageUrl() {
+        String picDirectoryPath = "D:/images/";
+        File directory = new File(picDirectoryPath);
+
+        List<String> imageUrls = new ArrayList<>();
+
+        if (directory.exists() && directory.isDirectory()) {
+            File[] files = directory.listFiles();
+            if (files != null) {
+                for( File file: files) {
+                    if (file.isFile() && isImage(file.getName())) {
+                        String imageName = file.getName();
+                        String imageUrl = "http://localhost:1000/images/" + imageName;
+                        imageUrls.add(imageUrl);
+                    }
+                }
+            }
         }
-        log.info("22");
-        return "11";
+        return imageUrls;
     }
 }

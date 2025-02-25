@@ -2,7 +2,12 @@ spring:
   profiles:
     active: dev
   application:
-    name: nbwater
+    name: QXXJL
+  mvc:
+    static-path-pattern: /java_project/images/**
+  web:
+    resources:
+      static-locations: file:D:/java_project/images/
 logging:
   config: classpath:logback-spring.xml
   servlet:
